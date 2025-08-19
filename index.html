@@ -1,318 +1,1597 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="ms">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Wajom - Coming Soon. Platform WhatsApp marketing terbaik untuk perniagaan anda.">
-    <meta name="keywords" content="Wajom, Coming Soon, WhatsApp Marketing, Business, Malaysia">
-    <meta name="author" content="Wajom">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wajom - Home</title>
+  <meta name="description"
+    content="Wajom adalah Sistem Follow-Up & Duplikasi Automatik di WhatsApp, direka khas untuk Pemimpin Pasukan yang serius di Malaysia.">
+  <meta name="keywords"
+    content="whatsapp marketing, chatbot, customer service ai, evergreen campaign, bisnis online, MLM, duplikasi sistem">
+  <meta property="og:title" content="Wajom.co - Dulu Sibuk Macam Admin. Sekarang Fokus Macam Leader.">
+  <meta property="og:description"
+    content="Wajom adalah Sistem Follow-Up & Duplikasi Automatik di WhatsApp, direka khas untuk Pemimpin Pasukan yang serius di Malaysia.">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wajom.co - Dulu Sibuk Macam Admin. Sekarang Fokus Macam Leader.">
+  <meta name="twitter:description"
+    content="Wajom adalah Sistem Follow-Up & Duplikasi Automatik di WhatsApp, direka khas untuk Pemimpin Pasukan yang serius di Malaysia.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Global Custom Styles */
 
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Wajom - Coming Soon">
-    <meta property="og:description" content="Platform WhatsApp marketing terbaik untuk perniagaan anda. Akan datang tidak lama lagi!">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="">
+    /* Hero Section Styles */
+    #hero .orb {
+      filter: blur(24px);
+      opacity: 0.25;
+    }
 
-    <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Wajom - Coming Soon">
-    <meta name="twitter:description" content="Platform WhatsApp marketing terbaik untuk perniagaan anda. Akan datang tidak lama lagi!">
+    #hero @keyframes float {
 
-    <title>Wajom - Coming Soon</title>
+      0%,
+      100% {
+        transform: translateY(0) translateX(0) scale(1);
+      }
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="logo.png">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
-    <style>
-        /* CSS Variables untuk Wajom Brand Colors */
-        :root {
-            --wajom-primary: #128C7E;
-            --wajom-primary-dark: #0F7A6E;
-            --wajom-secondary: #52BA63;
-            --wajom-secondary-dark: #47A556;
-            --wajom-tertiary: #42B6E8;
-            --wajom-tertiary-dark: #3BA4D1;
-            --gradient-start: #72ebe5;
-            --gradient-end: #31d6eb;
-        }
-        
-        /* Reset dan Base Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif;
-            background: linear-gradient(135deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-            overflow-x: hidden;
-        }
-        
-        /* Container utama */
-        .container {
-            text-align: center;
-            max-width: 600px;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            border-radius: 24px;
-            padding: 60px 40px;
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            animation: fadeInUp 1s ease-out;
-        }
-        
-        /* Logo Styling */
-        .logo {
-            width: 120px;
-            height: auto;
-            margin: 0 auto 40px;
-            filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
-            animation: logoFloat 3s ease-in-out infinite;
-            border-radius: 12px;
-        }
-        
-        /* Typography */
-        .coming-soon {
-            font-size: 3.5rem;
-            font-weight: 800;
-            background: linear-gradient(135deg, var(--wajom-primary) 0%, var(--wajom-secondary) 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            margin-bottom: 20px;
-            letter-spacing: -0.02em;
-            line-height: 1.1;
-        }
-        
-        .subtitle {
-            font-size: 1.25rem;
-            color: #64748b;
-            margin-bottom: 40px;
-            font-weight: 400;
-            line-height: 1.6;
-        }
-        
-        .description {
-            font-size: 1rem;
-            color: #64748b;
-            margin-bottom: 40px;
-            line-height: 1.7;
-        }
-        
+      50% {
+        transform: translateY(-8px) translateX(6px) scale(1.03);
+      }
+    }
 
-        /* Social Links */
-        .social-links {
-            margin-top: 40px;
-            display: flex;
-            justify-content: center;
-            gap: 16px;
-            flex-wrap: wrap;
-        }
+    #hero @keyframes pulse-glow {
 
-        .social-link {
-            width: 48px;
-            height: 48px;
-            background: rgba(18, 140, 126, 0.1);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-decoration: none;
-            color: var(--wajom-primary);
-            transition: all 0.3s ease;
-        }
+      0%,
+      100% {
+        box-shadow: 0 0 0 0 rgba(65, 180, 231, 0.35);
+      }
 
-        .social-link:hover {
-            background: var(--wajom-primary);
-            color: white;
-            transform: translateY(-2px);
-        }
-        
-        /* Animations */
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        @keyframes logoFloat {
-            0%, 100% {
-                transform: translateY(0px);
-            }
-            50% {
-                transform: translateY(-10px);
-            }
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .container {
-                padding: 40px 30px;
-                margin: 20px;
-                border-radius: 20px;
-            }
-            
-            .logo {
-                width: 100px;
-                margin-bottom: 30px;
-            }
-            
-            .coming-soon {
-                font-size: 2.5rem;
-                margin-bottom: 16px;
-            }
-            
-            .subtitle {
-                font-size: 1.1rem;
-                margin-bottom: 30px;
-            }
-            
-            .description {
-                font-size: 0.95rem;
-                margin-bottom: 30px;
-            }
-            
-            .cta-button {
-                padding: 14px 28px;
-                font-size: 1rem;
-            }
-            
-            .social-links {
-                margin-top: 30px;
-                gap: 12px;
-            }
-            
-            .social-link {
-                width: 44px;
-                height: 44px;
-            }
-        }
-        
-        @media (max-width: 480px) {
-            .container {
-                padding: 30px 20px;
-            }
-            
-            .coming-soon {
-                font-size: 2rem;
-            }
-            
-            .subtitle {
-                font-size: 1rem;
-            }
-            
-            .description {
-                font-size: 0.9rem;
-            }
-        }
-        
-        /* Background decorative elements */
-        .bg-decoration {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: -1;
-        }
-        
-        .bg-decoration::before {
-            content: '';
-            position: absolute;
-            top: 10%;
-            left: 10%;
-            width: 200px;
-            height: 200px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            animation: float1 6s ease-in-out infinite;
-        }
-        
-        .bg-decoration::after {
-            content: '';
-            position: absolute;
-            bottom: 10%;
-            right: 10%;
-            width: 150px;
-            height: 150px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 50%;
-            animation: float2 8s ease-in-out infinite;
-        }
-        
-        @keyframes float1 {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-20px) rotate(180deg); }
-        }
-        
-        @keyframes float2 {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            50% { transform: translateY(-30px) rotate(-180deg); }
-        }
-    </style>
+      50% {
+        box-shadow: 0 0 0 18px rgba(65, 180, 231, 0);
+      }
+    }
+
+    #hero .btn-glow:where(button, a) {
+      animation: pulse-glow 3s infinite;
+    }
+
+    #hero .grid-fade {
+      --c1: rgba(0, 158, 119, 0.08);
+      --c2: rgba(65, 180, 231, 0.06);
+      background-image: radial-gradient(circle at 1px 1px, var(--c1) 1px, transparent 0),
+        radial-gradient(circle at 1px 1px, var(--c2) 1px, transparent 0);
+      background-size: 36px 36px, 72px 72px;
+      mask-image: radial-gradient(1200px 600px at 60% -20%, black 35%, transparent 70%);
+    }
+
+    /* Problem Section Styles */
+    #problem @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0);
+      }
+
+      50% {
+        transform: translateY(-6px);
+      }
+    }
+
+    /* Solution Section Styles */
+    #solution @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0) translateX(0) scale(1);
+      }
+
+      50% {
+        transform: translateY(-8px) translateX(4px) scale(1.02);
+      }
+    }
+
+    #solution .shine {
+      background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.5) 50%, transparent 70%);
+      background-size: 200% 200%;
+      animation: shine 3s infinite;
+    }
+
+    #solution @keyframes shine {
+      0% {
+        background-position: -200% -200%;
+      }
+
+      50% {
+        background-position: 200% 200%;
+      }
+
+      100% {
+        background-position: -200% -200%;
+      }
+    }
+
+    /* How It Works Section Styles */
+    #how-it-works @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0) translateX(0) scale(1);
+      }
+
+      50% {
+        transform: translateY(-6px) translateX(2px) scale(1.01);
+      }
+    }
+
+    #how-it-works .feature-card {
+      transition: all 0.3s ease;
+    }
+
+    #how-it-works .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+
+    #how-it-works .icon-glow {
+      box-shadow: 0 0 20px rgba(0, 158, 119, 0.3);
+    }
+
+    /* Target Audience Section Styles */
+    #target-audience @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0) translateX(0) scale(1);
+      }
+
+      50% {
+        transform: translateY(-8px) translateX(4px) scale(1.02);
+      }
+    }
+
+    #target-audience .testimonial-card {
+      transition: all 0.3s ease;
+    }
+
+    #target-audience .testimonial-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    }
+
+    #target-audience .stat-number {
+      background: linear-gradient(135deg, #009E77, #52B963);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* FAQ Section Styles */
+    #faq .faq-item {
+      transition: all 0.3s ease;
+    }
+
+    #faq .faq-item.active .faq-answer {
+      max-height: 500px;
+      opacity: 1;
+      padding-top: 1rem;
+    }
+
+    #faq .faq-answer {
+      max-height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      padding-top: 0;
+    }
+
+    #faq .faq-icon {
+      transition: transform 0.3s ease;
+    }
+
+    #faq .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    /* Final CTA Section Styles */
+    #final-cta @keyframes pulse-glow {
+
+      0%,
+      100% {
+        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
+      }
+
+      50% {
+        box-shadow: 0 0 0 20px rgba(255, 255, 255, 0);
+      }
+    }
+
+    #final-cta .cta-button {
+      animation: pulse-glow 2s infinite;
+    }
+
+    #final-cta .floating-element {
+      animation: float 6s ease-in-out infinite;
+    }
+
+    #final-cta @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(0deg);
+      }
+
+      50% {
+        transform: translateY(-20px) rotate(5deg);
+      }
+    }
+
+    /* Animation classes */
+    .animate-float {
+      animation: float 8s ease-in-out infinite;
+    }
+
+    .animate-float-slow {
+      animation: float 10s ease-in-out infinite;
+    }
+
+    .animate-bounce {
+      animation: bounce 1s infinite;
+    }
+
+    @keyframes bounce {
+
+      0%,
+      100% {
+        transform: translateY(-25%);
+        animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+      }
+
+      50% {
+        transform: none;
+        animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+      }
+    }
+  </style>
 </head>
-<body>
-    <div class="bg-decoration"></div>
-    
-    <div class="container">
-        <!-- Logo Wajom -->
-        <img src="logo.png" alt="Wajom Logo" class="logo">
 
-        <!-- Konten Utama -->
-        <h1 class="coming-soon">Coming Soon</h1>
-        <p class="subtitle">Platform WhatsApp Marketing Terbaik untuk Perniagaan Anda</p>
-        <p class="description">
-            Kami sedang membangunkan satu platform WhatsApp Marketing yang bakal merevolusikan cara anda urus bisnes – dari follow-up automatik, bina kepercayaan, close sale, hingga berjaya bina team hebat level juara dunia!<br>Bersedia untuk cara baru berkomunikasi dengan pelanggan & team — lebih mudah, lebih konsisten, dan lebih menguntungkan.
-        </p>
+<body class="min-h-screen">
+  <!-- Hero Section -->
+  <!-- Header -->
+  <header
+    class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-xl border-b border-wajom-tertiary/10 shadow-sm transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="flex items-center justify-between h-16 lg:h-20">
 
-        <!-- Social Links -->
-        <div class="social-links">
-            <!-- Instagram -->
-            <a href="https://www.instagram.com/wajomco" class="social-link" title="Instagram" target="_blank" rel="noopener noreferrer">
-                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-                </svg>
-            </a>
-
-            <!-- Facebook -->
-            <a href="https://www.facebook.com/wajomco" class="social-link" title="Facebook" target="_blank" rel="noopener noreferrer">
-                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-                </svg>
-            </a>
-
-            <!-- YouTube -->
-            <a href="https://www.youtube.com/@wajomco" class="social-link" title="YouTube" target="_blank" rel="noopener noreferrer">
-                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                </svg>
-            </a>
-
-            <!-- WhatsApp Channel -->
-            <a href="https://whatsapp.com/channel/0029VbAvKlTBlHpaZ4npGJ0B" class="social-link" title="WhatsApp Channel" target="_blank" rel="noopener noreferrer">
-                <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.465 3.488"/>
-                </svg>
-            </a>
+        <!-- Logo -->
+        <div class="flex items-center">
+          <a href="#" class="flex items-center gap-3 group transition-transform duration-300 hover:scale-105">
+            <img src="/logo.png"
+              class="w-8 h-8 lg:w-12 lg:h-12 bg-gradient-to-br from-wajom-primary to-wajom-tertiary rounded-xl flex items-center justify-center shadow-lg shadow-wajom-primary/25">
+            </i>
+            <span class="text-xl lg:text-2xl font-bold text-wajom-primary tracking-tight">
+              Wajom
+            </span>
+          </a>
         </div>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-1">
+          <a href="/home.html"
+            class="px-4 py-2 text-green-600 text-sm hover:text-wajom-primary font-medium rounded-lg transition-all duration-200 hover:bg-wajom-primary/5 relative group">
+            Home
+            <span
+              class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-wajom-primary transition-all duration-200 group-hover:w-8 group-hover:left-1/2 group-hover:-translate-x-1/2"></span>
+          </a>
+          <a href="/about.html"
+            class="px-4 py-2 text-gray-700 text-sm hover:text-wajom-primary font-medium rounded-lg transition-all duration-200 hover:bg-wajom-primary/5 relative group">
+            About
+            <span
+              class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-wajom-primary transition-all duration-200 group-hover:w-8 group-hover:left-1/2 group-hover:-translate-x-1/2"></span>
+          </a>
+          <a href="/privacy-policy.html"
+            class="px-4 py-2 text-gray-700 text-sm hover:text-wajom-primary font-medium rounded-lg transition-all duration-200 hover:bg-wajom-primary/5 relative group">
+            Privacy Policy
+            <span
+              class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-wajom-primary transition-all duration-200 group-hover:w-8 group-hover:left-1/2 group-hover:-translate-x-1/2"></span>
+          </a>
+          <a href="/term-of-service.html"
+            class="px-4 py-2 text-gray-700 text-sm hover:text-wajom-primary font-medium rounded-lg transition-all duration-200 hover:bg-wajom-primary/5 relative group">
+            Terms of Service
+            <span
+              class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-wajom-primary transition-all duration-200 group-hover:w-8 group-hover:left-1/2 group-hover:-translate-x-1/2"></span>
+          </a>
+          <a href="/detail-of-service.html"
+            class="px-4 py-2 text-gray-700 text-sm hover:text-wajom-primary font-medium rounded-lg transition-all duration-200 hover:bg-wajom-primary/5 relative group">
+            Service Details
+            <span
+              class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-wajom-primary transition-all duration-200 group-hover:w-8 group-hover:left-1/2 group-hover:-translate-x-1/2"></span>
+          </a>
+          <a href="/cancelation-policy.html"
+            class="px-4 py-2 text-gray-700 text-sm hover:text-wajom-primary font-medium rounded-lg transition-all duration-200 hover:bg-wajom-primary/5 relative group">
+            Cancellation Policy
+            <span
+              class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-wajom-primary transition-all duration-200 group-hover:w-8 group-hover:left-1/2 group-hover:-translate-x-1/2"></span>
+          </a>
+        </nav>
+
+        <!-- Login Button & Mobile Menu -->
+        <div class="flex items-center gap-4">
+          <!-- Login Button -->
+          <a href="https://portal.wajom.co/login"
+            class="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold px-6 py-2.5 rounded-xl transition-all duration-200 shadow-lg shadow-teal-600/25 hover:shadow-xl hover:shadow-teal-600/30 hover:-translate-y-0.5">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+            </svg>
+            Login
+          </a>
+
+          <!-- Mobile Menu Button -->
+          <button id="mobile-menu-button"
+            class="lg:hidden p-2 text-gray-700 hover:text-teal-600 transition-colors duration-200">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div id="mobile-menu" class="lg:hidden hidden border-t border-gray-100 bg-white/95 backdrop-blur-xl">
+        <div class="py-4 space-y-2">
+          <a href="/home.html"
+            class="block px-4 py-3 text-gray-700 hover:text-wajom-primary hover:bg-wajom-primary/5 font-medium rounded-lg transition-all duration-200">
+            Home
+          </a>
+          <a href="/about.html"
+            class="block px-4 py-3 text-gray-700 hover:text-wajom-primary hover:bg-wajom-primary/5 font-medium rounded-lg transition-all duration-200">
+            About
+          </a>
+          <a href="/privacy-policy.html"
+            class="block px-4 py-3 text-gray-700 hover:text-wajom-primary hover:bg-wajom-primary/5 font-medium rounded-lg transition-all duration-200">
+            Privacy Policy
+          </a>
+          <a href="/term-of-service.html"
+            class="block px-4 py-3 text-gray-700 hover:text-wajom-primary hover:bg-wajom-primary/5 font-medium rounded-lg transition-all duration-200">
+            Terms of Service
+          </a>
+          <a href="/detail-of-service.html"
+            class="block px-4 py-3 text-gray-700 hover:text-wajom-primary hover:bg-wajom-primary/5 font-medium rounded-lg transition-all duration-200">
+            Service Details
+          </a>
+          <a href="/cancelation-policy.html"
+            class="block px-4 py-3 text-gray-700 hover:text-wajom-primary hover:bg-wajom-primary/5 font-medium rounded-lg transition-all duration-200">
+            Cancellation Policy
+          </a>
+        </div>
+      </div>
     </div>
+  </header>
+  <section id="hero" class="relative isolate overflow-hidden bg-gradient-to-b from-white to-[#F2FBF8]">
+    <div class="absolute inset-0 grid-fade pointer-events-none"></div>
+    <div class="absolute -top-24 -left-24 h-80 w-80 rounded-full bg-[#41B4E7]/30 orb animate-float"></div>
+    <div class="absolute -bottom-24 -right-24 h-96 w-96 rounded-full bg-[#009E77]/30 orb animate-float-slow"></div>
+
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 md:py-24 lg:py-32 xl:py-48">
+      <div class="grid items-center gap-8 sm:gap-10 lg:gap-12 lg:grid-cols-2">
+        <div class="relative text-center lg:text-left order-2 lg:order-1">
+          <span
+            class="inline-flex items-center gap-2 rounded-full border border-[#009E77]/20 bg-white/80 px-3 py-1.5 text-xs sm:text-sm font-medium text-[#009E77] backdrop-blur">
+            <span class="h-2 w-2 rounded-full bg-[#52B963]"></span>
+            <span class="hidden sm:inline">Automasi WhatsApp untuk Leader</span>
+            <span class="sm:hidden">Automasi WhatsApp</span>
+          </span>
+
+          <h1
+            class="mt-4 sm:mt-5 text-3xl sm:text-4xl md:text-5xl lg:text-4xl xl:text-5xl font-extrabold leading-tight tracking-tight text-gray-900">
+            <span class="block">Wajom.co -</span>
+            <span class="block">Automasi WhatsApp</span>
+            <span class="block">untuk Leader</span>
+          </h1>
+
+          <p
+            class="mt-4 sm:mt-5 max-w-2xl mx-auto lg:mx-0 text-sm sm:text-base lg:text-lg leading-relaxed text-gray-600">
+            Platform automasi WhatsApp yang direka khas untuk leader MLM, hartanah, insurans, dan emas. Tingkatkan
+            produktiviti pasukan anda dengan automasi yang pintar.
+          </p>
+
+          <div
+            class="mt-6 sm:mt-8 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4">
+            <a href="#problem" aria-label="Ketahui masalah yang kami selesaikan"
+              class="btn-glow group w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-[#41B4E7] px-5 sm:px-6 py-3 sm:py-3.5 text-sm sm:text-base font-semibold text-white transition hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#41B4E7]">
+              <span class="hidden sm:inline">Ketahui Masalah Kami Selesaikan</span>
+              <span class="sm:hidden">Ketahui Masalah</span>
+              <svg class="h-4 w-4 transition group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="currentColor"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+            <a href="#solution" aria-label="Mulai sekarang dengan Wajom"
+              class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full border border-[#009E77]/20 bg-white px-5 sm:px-6 py-3 sm:py-3.5 text-sm sm:text-base font-semibold text-[#009E77] shadow-sm transition hover:border-[#009E77]/40 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#009E77]">
+              Mulai Sekarang
+            </a>
+          </div>
+
+          <div
+            class="mt-6 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 text-xs sm:text-sm text-gray-500">
+            <div class="flex -space-x-2">
+              <img src="https://placehold.co/32x32" alt="Avatar leader 1"
+                class="h-6 w-6 sm:h-8 sm:w-8 rounded-full ring-2 ring-white" />
+              <img src="https://placehold.co/32x32" alt="Avatar leader 2"
+                class="h-6 w-6 sm:h-8 sm:w-8 rounded-full ring-2 ring-white" />
+              <img src="https://placehold.co/32x32" alt="Avatar leader 3"
+                class="h-6 w-6 sm:h-8 sm:w-8 rounded-full ring-2 ring-white" />
+            </div>
+            <span class="text-center sm:text-left">
+              <span class="hidden sm:inline">Dipercayai leader di MLM • Hartanah • Insurans • Emas</span>
+              <span class="sm:hidden">Dipercayai leader di Malaysia</span>
+            </span>
+          </div>
+        </div>
+
+        <div class="relative order-1 lg:order-2">
+          <div
+            class="relative z-10 overflow-hidden rounded-xl sm:rounded-2xl border border-gray-200 bg-white shadow-[0_20px_60px_-20px_rgba(0,0,0,.25)] mx-auto max-w-sm sm:max-w-md lg:max-w-none">
+            <img src="https://placehold.co/960x640/png?text=Automasi+WhatsApp+Wajom"
+              alt="Ilustrasi automasi WhatsApp Wajom"
+              class="h-full w-full object-cover aspect-[4/3] sm:aspect-[16/10]" />
+            <div
+              class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(82,185,99,.18),transparent_40%),radial-gradient(circle_at_20%_80%,rgba(65,180,231,.18),transparent_40%)]">
+            </div>
+          </div>
+
+          <div
+            class="absolute -bottom-3 sm:-bottom-6 -left-3 sm:-left-6 z-20 rounded-lg sm:rounded-xl bg-white/90 px-3 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm text-gray-700 shadow-xl ring-1 ring-gray-200 backdrop-blur animate-float">
+            <span class="font-semibold text-[#009E77]">+300%</span>
+            <span class="hidden sm:inline">lebih banyak prospek</span>
+            <span class="sm:hidden">prospek</span>
+          </div>
+          <div
+            class="absolute -top-3 sm:-top-6 -right-3 sm:-right-6 z-20 rounded-lg sm:rounded-xl bg-white/90 px-3 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm text-gray-700 shadow-xl ring-1 ring-gray-200 backdrop-blur animate-float-slow">
+            <span class="font-semibold text-[#41B4E7]">24/7</span>
+            <span class="hidden sm:inline">balasan automatik</span>
+            <span class="sm:hidden">auto</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pointer-events-none absolute inset-x-0 bottom-4 sm:bottom-6 flex justify-center">
+      <div
+        class="inline-flex items-center gap-2 rounded-full border border-gray-200 bg-white/80 px-3 py-1.5 text-xs sm:text-sm text-gray-500 backdrop-blur">
+        <span class="hidden sm:inline">Scroll untuk ketahui lebih</span>
+        <span class="sm:hidden">Scroll</span>
+        <svg class="h-3 w-3 sm:h-3.5 sm:w-3.5 animate-bounce" viewBox="0 0 20 20" fill="currentColor"
+          aria-hidden="true">
+          <path fill-rule="evenodd"
+            d="M5.23 7.21a.75.75 0 011.06.02L10 11.17l3.71-3.94a.75.75 0 011.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0L5.21 8.27a.75.75 0 01.02-1.06z"
+            clip-rule="evenodd"></path>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Problem Section -->
+  <section id="problem" class="relative overflow-hidden bg-white">
+    <div class="absolute inset-0 opacity-[0.06]" aria-hidden="true">
+      <div class="pointer-events-none absolute -left-24 top-1/3 h-72 w-72 rounded-full bg-[#52B963] blur-3xl"></div>
+      <div class="pointer-events-none absolute -right-24 top-10 h-72 w-72 rounded-full bg-[#41B4E7] blur-3xl"></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-28">
+      <div class="text-center mb-12 sm:mb-16">
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-gray-900">
+          Masalah yang Sering Dihadapi Bisnis
+        </h2>
+        <p class="mt-4 sm:mt-5 text-sm sm:text-base lg:text-lg leading-relaxed text-gray-600 max-w-3xl mx-auto">
+          Ramai leader hebat di Malaysia terperangkap dalam kitaran yang sama—siang hari jadi visioner, malam jadi
+          admin.
+        </p>
+      </div>
+
+      <div class="grid gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <!-- Problem 1: Follow-up Manual -->
+        <div
+          class="group rounded-xl sm:rounded-2xl border border-gray-200 bg-white p-4 sm:p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+          <div class="flex items-start gap-3 sm:gap-4">
+            <div class="rounded-md bg-red-50 p-2 sm:p-3 text-red-600 flex-shrink-0">
+              <svg class="h-5 w-5 sm:h-6 sm:w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+              </svg>
+            </div>
+            <div class="min-w-0 flex-1">
+              <h3 class="font-semibold text-gray-900 mb-2 text-sm sm:text-base">
+                Follow-up Manual yang Memenatkan
+              </h3>
+              <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                Setiap hari perlu manually follow-up ratusan prospek. Banyak yang terlepas, banyak yang terlupa.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Problem 2: Latihan Tidak Konsisten -->
+        <div
+          class="group rounded-xl sm:rounded-2xl border border-gray-200 bg-white p-4 sm:p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+          <div class="flex items-start gap-3 sm:gap-4">
+            <div class="rounded-md bg-orange-50 p-2 sm:p-3 text-orange-600 flex-shrink-0">
+              <svg class="h-5 w-5 sm:h-6 sm:w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <div class="min-w-0 flex-1">
+              <h3 class="font-semibold text-gray-900 mb-2 text-sm sm:text-base">
+                Latihan Tidak Konsisten
+              </h3>
+              <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                Susah nak pastikan semua ahli pasukan dapat latihan yang sama. Kualiti berbeza-beza.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Problem 3: Soalan Berulang -->
+        <div
+          class="group rounded-xl sm:rounded-2xl border border-gray-200 bg-white p-4 sm:p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+          <div class="flex items-start gap-3 sm:gap-4">
+            <div class="rounded-md bg-yellow-50 p-2 sm:p-3 text-yellow-600 flex-shrink-0">
+              <svg class="h-5 w-5 sm:h-6 sm:w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M11 18h2v-2h-2v2zm1-16C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm0-14c-2.21 0-4 1.79-4 4h2c0-1.1.9-2 2-2s2 .9 2 2c0 2-3 1.75-3 5h2c0-2.25 3-2.5 3-5 0-2.21-1.79-4-4-4z" />
+              </svg>
+            </div>
+            <div class="min-w-0 flex-1">
+              <h3 class="font-semibold text-gray-900 mb-2 text-sm sm:text-base">
+                Soalan Asas Berulang
+              </h3>
+              <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                Hari-hari jawab soalan yang sama. Masa habis untuk perkara basic, bukan untuk strategy.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Problem 4: Data Berpecah -->
+        <div
+          class="group rounded-xl sm:rounded-2xl border border-gray-200 bg-white p-4 sm:p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+          <div class="flex items-start gap-3 sm:gap-4">
+            <div class="rounded-md bg-purple-50 p-2 sm:p-3 text-purple-600 flex-shrink-0">
+              <svg class="h-5 w-5 sm:h-6 sm:w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z" />
+              </svg>
+            </div>
+            <div class="min-w-0 flex-1">
+              <h3 class="font-semibold text-gray-900 mb-2 text-sm sm:text-base">
+                Data Prospek Berpecah
+              </h3>
+              <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                WhatsApp sini, Excel sana, nota di phone. Susah nak track progress dan performance.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Problem 5: Scaling Susah -->
+        <div
+          class="group rounded-xl sm:rounded-2xl border border-gray-200 bg-white p-4 sm:p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+          <div class="flex items-start gap-3 sm:gap-4">
+            <div class="rounded-md bg-blue-50 p-2 sm:p-3 text-blue-600 flex-shrink-0">
+              <svg class="h-5 w-5 sm:h-6 sm:w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M16 6l2.29 2.29-4.88 4.88-4-4L2 16.59 3.41 18l6-6 4 4 6.3-6.29L22 12V6z" />
+              </svg>
+            </div>
+            <div class="min-w-0 flex-1">
+              <h3 class="font-semibold text-gray-900 mb-2 text-sm sm:text-base">
+                Scaling Bisnis Susah
+              </h3>
+              <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                Nak grow team, tapi sistem tak support. Makin besar team, makin chaos operation.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Problem 6: Burnout Leader -->
+        <div
+          class="group rounded-xl sm:rounded-2xl border border-gray-200 bg-white p-4 sm:p-6 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md">
+          <div class="flex items-start gap-3 sm:gap-4">
+            <div class="rounded-md bg-red-50 p-2 sm:p-3 text-red-600 flex-shrink-0">
+              <svg class="h-5 w-5 sm:h-6 sm:w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+              </svg>
+            </div>
+            <div class="min-w-0 flex-1">
+              <h3 class="font-semibold text-gray-900 mb-2 text-sm sm:text-base">
+                Leader Burnout
+              </h3>
+              <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">
+                Jadi leader tapi kerja macam admin. Passion untuk lead team perlahan-lahan hilang.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-12 sm:mt-16 text-center">
+        <div
+          class="inline-flex items-start sm:items-center gap-3 sm:gap-4 rounded-xl sm:rounded-2xl border border-red-200 bg-red-50 px-4 sm:px-6 py-3 sm:py-4 max-w-2xl mx-auto">
+          <div class="rounded-full bg-red-100 p-2 text-red-600 flex-shrink-0">
+            <svg class="h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd"
+                d="M8.485 2.495c.673-1.167 2.357-1.167 3.03 0l6.28 10.875c.673 1.167-.17 2.625-1.516 2.625H3.72c-1.347 0-2.189-1.458-1.515-2.625L8.485 2.495zM10 5a.75.75 0 01.75.75v3.5a.75.75 0 01-1.5 0v-3.5A.75.75 0 0110 5zm0 9a1 1 0 100-2 1 1 0 000 2z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <div class="text-left min-w-0 flex-1">
+            <p class="font-semibold text-red-900 text-sm sm:text-base leading-tight">
+              Hasil: Potensi pasukan tidak tergali, leader exhausted, bisnis stuck.
+            </p>
+            <p class="text-xs sm:text-sm text-red-700 mt-1 leading-relaxed">
+              Inilah sebab ramai leader hebat tak dapat scale bisnis mereka.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Solution Section -->
+  <section id="solution" class="relative overflow-hidden bg-gradient-to-b from-[#F2FBF8] to-white">
+    <div class="absolute inset-0 opacity-[0.04]" aria-hidden="true">
+      <div class="pointer-events-none absolute -right-32 top-1/4 h-96 w-96 rounded-full bg-[#009E77] blur-3xl"></div>
+      <div class="pointer-events-none absolute -left-32 bottom-1/4 h-96 w-96 rounded-full bg-[#41B4E7] blur-3xl"></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 py-16 sm:py-20 lg:py-28">
+      <div class="grid items-center gap-8 sm:gap-12 lg:grid-cols-2">
+        <div class="relative order-2 lg:order-1">
+          <div
+            class="relative z-10 overflow-hidden rounded-xl sm:rounded-2xl border border-gray-200 bg-white shadow-[0_20px_60px_-20px_rgba(0,0,0,.25)]">
+            <img src="https://placehold.co/960x640/png?text=Wajom+Dashboard" alt="Wajom Dashboard Interface"
+              class="h-full w-full object-cover" />
+            <div
+              class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_30%_80%,rgba(82,185,99,.15),transparent_50%),radial-gradient(circle_at_80%_20%,rgba(65,180,231,.15),transparent_50%)]">
+            </div>
+          </div>
+
+          <div
+            class="absolute -bottom-2 sm:-bottom-4 -left-2 sm:-left-4 z-20 rounded-lg sm:rounded-xl bg-white/95 px-3 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm text-gray-700 shadow-xl ring-1 ring-gray-200 backdrop-blur animate-float">
+            <span class="font-semibold text-[#009E77]">Automasi</span> 24/7
+          </div>
+          <div
+            class="absolute -top-2 sm:-top-4 -right-2 sm:-right-4 z-20 rounded-lg sm:rounded-xl bg-white/95 px-3 sm:px-4 py-2 sm:py-3 text-xs sm:text-sm text-gray-700 shadow-xl ring-1 ring-gray-200 backdrop-blur animate-float-slow">
+            <span class="font-semibold text-[#41B4E7]">Smart</span> Follow-up
+          </div>
+        </div>
+
+        <div class="relative order-1 lg:order-2">
+          <span
+            class="inline-flex items-center gap-2 rounded-full border border-[#009E77]/20 bg-white/80 px-3 py-1 text-xs font-medium text-[#009E77] backdrop-blur">
+            <span class="h-2 w-2 rounded-full bg-[#52B963]"></span> Solusi Terdepan
+          </span>
+          <h2 class="mt-4 sm:mt-5 text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-gray-900">
+            Kenalkan Wajom - Sistem Follow-Up & Duplikasi Automatik di WhatsApp
+          </h2>
+          <p class="mt-4 sm:mt-5 text-sm sm:text-base leading-relaxed text-gray-600">
+            Wajom adalah platform automasi WhatsApp yang direka khas untuk Pemimpin Pasukan yang serius di Malaysia.
+            Kami faham cabaran anda, dan kami ada solusinya.
+          </p>
+
+          <div class="mt-6 sm:mt-8 space-y-3 sm:space-y-4">
+            <div class="flex items-start gap-3 sm:gap-4">
+              <div class="rounded-md bg-[#009E77]/10 p-2 text-[#009E77] flex-shrink-0">
+                <svg class="h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+              </div>
+              <div class="min-w-0 flex-1">
+                <h3 class="font-semibold text-gray-900 text-sm sm:text-base">
+                  Follow-Up Automatik yang Pintar
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-600 leading-relaxed mt-1">
+                  Sistem kami akan follow-up prospek anda secara automatik, pada masa yang tepat, dengan mesej yang
+                  personal.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 sm:gap-4">
+              <div class="rounded-md bg-[#41B4E7]/10 p-2 text-[#41B4E7] flex-shrink-0">
+                <svg class="h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path
+                    d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100-4m0 4v2m0-6V4" />
+                </svg>
+              </div>
+              <div class="min-w-0 flex-1">
+                <h3 class="font-semibold text-gray-900 text-sm sm:text-base">
+                  Duplikasi Sistem yang Konsisten
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-600 leading-relaxed mt-1">
+                  Setiap ahli pasukan dapat akses kepada sistem latihan dan follow-up yang sama. Kualiti terjamin.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-3 sm:gap-4">
+              <div class="rounded-md bg-[#52B963]/10 p-2 text-[#52B963] flex-shrink-0">
+                <svg class="h-4 w-4 sm:h-5 sm:w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                  <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+              </div>
+              <div class="min-w-0 flex-1">
+                <h3 class="font-semibold text-gray-900 text-sm sm:text-base">
+                  Scaling Tanpa Had
+                </h3>
+                <p class="text-xs sm:text-sm text-gray-600 leading-relaxed mt-1">
+                  Dari 10 prospek ke 10,000 prospek. Sistem kami scale bersama bisnis anda tanpa tambah beban kerja.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-6 sm:mt-8 flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3">
+            <a href="#how-it-works" aria-label="Ketahui bagaimana Wajom berfungsi"
+              class="group inline-flex items-center justify-center gap-2 rounded-full bg-[#009E77] px-4 sm:px-5 py-3 text-sm sm:text-base text-white transition hover:brightness-110 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#009E77]">
+              Ketahui Bagaimana Ia Berfungsi
+              <svg class="h-4 w-4 transition group-hover:translate-x-0.5" viewBox="0 0 20 20" fill="currentColor"
+                aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </a>
+            <a href="#demo" aria-label="Lihat demo Wajom"
+              class="inline-flex items-center justify-center gap-2 rounded-full border border-[#41B4E7]/20 bg-white px-4 sm:px-5 py-3 text-sm sm:text-base text-[#41B4E7] shadow-sm transition hover:border-[#41B4E7]/40 hover:shadow-md focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#41B4E7]">
+              Lihat Demo
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-16 sm:mt-20">
+        <div class="text-center mb-8 sm:mb-12">
+          <h3 class="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 mb-3 sm:mb-4">
+            Transformasi yang Anda Akan Rasai
+          </h3>
+          <p class="text-sm sm:text-base text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            Dari admin yang letih kepada leader yang berfokus. Inilah perubahan yang akan anda alami.
+          </p>
+        </div>
+
+        <div class="grid gap-6 sm:gap-8 md:grid-cols-3">
+          <div class="text-center group">
+            <div
+              class="mx-auto mb-3 sm:mb-4 h-12 w-12 sm:h-16 sm:w-16 rounded-full bg-gradient-to-br from-red-100 to-red-200 flex items-center justify-center group-hover:scale-105 transition-transform">
+              <svg class="h-6 w-6 sm:h-8 sm:w-8 text-red-600" viewBox="0 0 24 24" fill="currentColor"
+                aria-hidden="true">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+              </svg>
+            </div>
+            <h4 class="font-semibold text-gray-900 mb-2 text-sm sm:text-base">Dulu: Sibuk Macam Admin</h4>
+            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">Hari-hari follow-up manual, jawab soalan
+              berulang, data berpecah-belah.</p>
+          </div>
+
+          <div class="text-center">
+            <div
+              class="mx-auto mb-3 sm:mb-4 h-12 w-12 sm:h-16 sm:w-16 rounded-full bg-gradient-to-br from-yellow-100 to-yellow-200 flex items-center justify-center">
+              <svg class="h-6 w-6 sm:h-8 sm:w-8 text-yellow-600" viewBox="0 0 24 24" fill="currentColor"
+                aria-hidden="true">
+                <path d="M13 3l3.293 3.293-7 7 1.414 1.414 7-7L21 10.414V3z" />
+                <path d="M19 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h6" />
+              </svg>
+            </div>
+            <h4 class="font-semibold text-gray-900 mb-2 text-sm sm:text-base">Proses: Automasi Wajom</h4>
+            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">Sistem mengambil alih tugasan berulang, anda
+              fokus pada strategy.</p>
+          </div>
+
+          <div class="text-center group">
+            <div
+              class="mx-auto mb-3 sm:mb-4 h-12 w-12 sm:h-16 sm:w-16 rounded-full bg-gradient-to-br from-green-100 to-green-200 flex items-center justify-center group-hover:scale-105 transition-transform">
+              <svg class="h-6 w-6 sm:h-8 sm:w-8 text-green-600" viewBox="0 0 24 24" fill="currentColor"
+                aria-hidden="true">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <h4 class="font-semibold text-gray-900 mb-2 text-sm sm:text-base">Sekarang: Fokus Macam Leader</h4>
+            <p class="text-xs sm:text-sm text-gray-600 leading-relaxed">Masa untuk coaching, strategy, dan scaling
+              bisnis ke tahap seterusnya.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="relative overflow-hidden bg-white py-20 lg:py-28">
+    <div class="absolute inset-0 opacity-[0.03]" aria-hidden="true">
+      <div class="pointer-events-none absolute left-1/4 top-0 h-96 w-96 rounded-full bg-[#009E77] blur-3xl"></div>
+      <div class="pointer-events-none absolute right-1/4 bottom-0 h-96 w-96 rounded-full bg-[#41B4E7] blur-3xl"></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-4 sm:px-6">
+      <div class="text-center mb-12 sm:mb-16">
+        <span
+          class="inline-flex items-center gap-2 rounded-full border border-[#009E77]/20 bg-[#009E77]/5 px-3 sm:px-4 py-2 text-xs sm:text-sm font-medium text-[#009E77]">
+          <span class="h-2 w-2 rounded-full bg-[#009E77] animate-pulse"></span>
+          Bagaimana Ia Berfungsi
+        </span>
+        <h2 class="mt-4 sm:mt-6 text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-gray-900">
+          3 Fitur Utama yang Mengubah Permainan
+        </h2>
+        <p class="mt-3 sm:mt-4 text-base sm:text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+          Sistem yang direka khas untuk Pemimpin Pasukan yang mahukan hasil maksimum dengan usaha minimum.
+        </p>
+      </div>
+
+      <div class="grid gap-6 sm:gap-8 md:grid-cols-3">
+        <!-- Evergreen Campaign -->
+        <div
+          class="feature-card group relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-8 shadow-lg">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-[#009E77]/5 to-transparent opacity-0 transition-opacity group-hover:opacity-100">
+          </div>
+
+          <div class="relative z-10">
+            <div
+              class="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-[#009E77] to-[#52B963] text-white icon-glow">
+              <svg class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Evergreen Campaign
+            </h3>
+
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Sistem automasi yang menghantar mesej follow-up secara berterusan kepada prospek anda. Tidak perlu ingat,
+              tidak perlu manual - semuanya automatik.
+            </p>
+
+            <div class="space-y-3">
+              <div class="flex items-center gap-3 text-sm">
+                <div class="h-2 w-2 rounded-full bg-[#52B963]"></div>
+                <span class="text-gray-700">Follow-up automatik 24/7</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm">
+                <div class="h-2 w-2 rounded-full bg-[#52B963]"></div>
+                <span class="text-gray-700">Mesej yang dipersonalisasi</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm">
+                <div class="h-2 w-2 rounded-full bg-[#52B963]"></div>
+                <span class="text-gray-700">Timing yang optimum</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="absolute -bottom-2 -right-2 h-24 w-24 rounded-full bg-[#009E77]/10 animate-float"></div>
+        </div>
+
+        <!-- Customer Service AI -->
+        <div
+          class="feature-card group relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-8 shadow-lg">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-[#41B4E7]/5 to-transparent opacity-0 transition-opacity group-hover:opacity-100">
+          </div>
+
+          <div class="relative z-10">
+            <div
+              class="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-[#41B4E7] to-[#5BC0EB] text-white icon-glow">
+              <svg class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h4l4 4 4-4h4c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z" />
+              </svg>
+            </div>
+
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Customer Service AI
+            </h3>
+
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Chatbot pintar yang menjawab soalan prospek 24/7. Dari soalan asas hingga kompleks - semuanya dijawab
+              dengan tepat dan pantas.
+            </p>
+
+            <div class="space-y-3">
+              <div class="flex items-center gap-3 text-sm">
+                <div class="h-2 w-2 rounded-full bg-[#41B4E7]"></div>
+                <span class="text-gray-700">Respons segera 24/7</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm">
+                <div class="h-2 w-2 rounded-full bg-[#41B4E7]"></div>
+                <span class="text-gray-700">Jawapan yang konsisten</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm">
+                <div class="h-2 w-2 rounded-full bg-[#41B4E7]"></div>
+                <span class="text-gray-700">Pembelajaran berterusan</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="absolute -bottom-2 -right-2 h-24 w-24 rounded-full bg-[#41B4E7]/10 animate-float-slow"></div>
+        </div>
+
+        <!-- Share Owner -->
+        <div
+          class="feature-card group relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-8 shadow-lg">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/5 to-transparent opacity-0 transition-opacity group-hover:opacity-100">
+          </div>
+
+          <div class="relative z-10">
+            <div
+              class="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-[#8B5CF6] to-[#A78BFA] text-white icon-glow">
+              <svg class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63A1.5 1.5 0 0 0 18.54 8H16c-.8 0-1.54.37-2.01.99l-2.54 3.4c-.74.99-.74 2.31 0 3.3l2.54 3.4c.47.62 1.21.99 2.01.99h2.46V22h2zM12.5 11.5c.83 0 1.5-.67 1.5-1.5s-.67-1.5-1.5-1.5S11 9.17 11 10s.67 1.5 1.5 1.5zM5.5 6c1.11 0 2-.89 2-2s-.89-2-2-2-2 .89-2 2 .89 2 2 2zm2.5 16v-6H10l-2.54-7.63A1.5 1.5 0 0 0 6.04 8H3.5c-.8 0-1.54.37-2.01.99L-.05 12.39c-.74.99-.74 2.31 0 3.3L2.49 19.1c.47.62 1.21.99 2.01.99H7V22h1z" />
+              </svg>
+            </div>
+
+            <h3 class="text-xl font-bold text-gray-900 mb-3">
+              Share Owner
+            </h3>
+
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Sistem kolaborasi yang membolehkan seluruh pasukan anda menggunakan script, template, dan strategi yang
+              sama. Duplikasi kejayaan dengan mudah.
+            </p>
+
+            <div class="space-y-3">
+              <div class="flex items-center gap-3 text-sm">
+                <div class="h-2 w-2 rounded-full bg-[#8B5CF6]"></div>
+                <span class="text-gray-700">Kolaborasi pasukan</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm">
+                <div class="h-2 w-2 rounded-full bg-[#8B5CF6]"></div>
+                <span class="text-gray-700">Template terkongsi</span>
+              </div>
+              <div class="flex items-center gap-3 text-sm">
+                <div class="h-2 w-2 rounded-full bg-[#8B5CF6]"></div>
+                <span class="text-gray-700">Duplikasi sistem</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="absolute -bottom-2 -right-2 h-24 w-24 rounded-full bg-[#8B5CF6]/10 animate-float"></div>
+        </div>
+      </div>
+
+      <div class="mt-16 text-center">
+        <div
+          class="inline-flex items-center gap-4 rounded-2xl border border-gray-200 bg-white/80 px-6 py-4 shadow-lg backdrop-blur">
+          <div class="flex -space-x-2">
+            <div class="h-8 w-8 rounded-full bg-gradient-to-br from-[#009E77] to-[#52B963] ring-2 ring-white"></div>
+            <div class="h-8 w-8 rounded-full bg-gradient-to-br from-[#41B4E7] to-[#5BC0EB] ring-2 ring-white"></div>
+            <div class="h-8 w-8 rounded-full bg-gradient-to-br from-[#8B5CF6] to-[#A78BFA] ring-2 ring-white"></div>
+          </div>
+          <span class="text-sm font-medium text-gray-700">
+            Ketiga-tiga fitur ini bekerja bersama untuk hasil maksimum
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Target Audience & Social Proof Section -->
+  <section id="target-audience" class="relative overflow-hidden bg-gradient-to-b from-gray-50 to-white py-20 lg:py-28">
+    <div class="absolute inset-0 opacity-[0.02]" aria-hidden="true">
+      <div class="pointer-events-none absolute -left-40 top-1/3 h-80 w-80 rounded-full bg-[#009E77] blur-3xl"></div>
+      <div class="pointer-events-none absolute -right-40 bottom-1/3 h-80 w-80 rounded-full bg-[#41B4E7] blur-3xl"></div>
+    </div>
+
+    <div class="mx-auto max-w-7xl px-6">
+      <!-- Target Audience Section -->
+      <div class="text-center mb-20">
+        <span
+          class="inline-flex items-center gap-2 rounded-full border border-[#009E77]/20 bg-white/80 px-4 py-2 text-sm font-medium text-[#009E77] backdrop-blur">
+          <span class="h-2 w-2 rounded-full bg-[#009E77] animate-pulse"></span>
+          Siapa Yang Sesuai
+        </span>
+        <h2 class="mt-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          Direka Khas untuk Pemimpin Pasukan Seperti Anda
+        </h2>
+        <p class="mt-4 text-lg text-gray-600 max-w-3xl mx-auto">
+          Jika anda adalah salah seorang daripada ini, Wajom adalah jawapan yang anda cari.
+        </p>
+      </div>
+
+      <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4 mb-20">
+        <div
+          class="group relative overflow-hidden rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-lg transition-all">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-[#009E77]/5 to-transparent opacity-0 transition-opacity group-hover:opacity-100">
+          </div>
+          <div class="relative z-10">
+            <div
+              class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-[#009E77]/10 text-[#009E77]">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-gray-900 mb-2">Network Marketer</h3>
+            <p class="text-sm text-gray-600">Yang mahukan sistem follow-up yang konsisten untuk semua prospek.</p>
+          </div>
+        </div>
+
+        <div
+          class="group relative overflow-hidden rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-lg transition-all">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-[#41B4E7]/5 to-transparent opacity-0 transition-opacity group-hover:opacity-100">
+          </div>
+          <div class="relative z-10">
+            <div
+              class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-[#41B4E7]/10 text-[#41B4E7]">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-gray-900 mb-2">Team Leader</h3>
+            <p class="text-sm text-gray-600">Yang ingin duplikasi sistem kejayaan kepada seluruh pasukan.</p>
+          </div>
+        </div>
+
+        <div
+          class="group relative overflow-hidden rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-lg transition-all">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-[#52B963]/5 to-transparent opacity-0 transition-opacity group-hover:opacity-100">
+          </div>
+          <div class="relative z-10">
+            <div
+              class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-[#52B963]/10 text-[#52B963]">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z" />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-gray-900 mb-2">Business Owner</h3>
+            <p class="text-sm text-gray-600">Yang mahu scale bisnes tanpa tambah beban kerja harian.</p>
+          </div>
+        </div>
+
+        <div
+          class="group relative overflow-hidden rounded-xl border border-gray-200 bg-white p-6 shadow-sm hover:shadow-lg transition-all">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-[#8B5CF6]/5 to-transparent opacity-0 transition-opacity group-hover:opacity-100">
+          </div>
+          <div class="relative z-10">
+            <div
+              class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-[#8B5CF6]/10 text-[#8B5CF6]">
+              <svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M16 4c0-1.11.89-2 2-2s2 .89 2 2-.89 2-2 2-2-.89-2-2zm4 18v-6h2.5l-2.54-7.63A1.5 1.5 0 0 0 18.54 8H16c-.8 0-1.54.37-2.01.99l-2.54 3.4c-.74.99-.74 2.31 0 3.3l2.54 3.4c.47.62 1.21.99 2.01.99h2.46V22h2z" />
+              </svg>
+            </div>
+            <h3 class="font-semibold text-gray-900 mb-2">Sales Professional</h3>
+            <p class="text-sm text-gray-600">Yang ingin automasi proses jualan untuk fokus pada closing.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Statistics Section -->
+      <div class="mb-20">
+        <div class="grid gap-8 md:grid-cols-4 text-center">
+          <div class="group">
+            <div class="stat-number text-4xl font-bold mb-2">500+</div>
+            <p class="text-gray-600 text-sm">Pemimpin Pasukan<br />Menggunakan Wajom</p>
+          </div>
+          <div class="group">
+            <div class="stat-number text-4xl font-bold mb-2">10,000+</div>
+            <p class="text-gray-600 text-sm">Prospek Difollow-up<br />Setiap Hari</p>
+          </div>
+          <div class="group">
+            <div class="stat-number text-4xl font-bold mb-2">95%</div>
+            <p class="text-gray-600 text-sm">Kadar Kepuasan<br />Pengguna</p>
+          </div>
+          <div class="group">
+            <div class="stat-number text-4xl font-bold mb-2">24/7</div>
+            <p class="text-gray-600 text-sm">Automasi Tanpa<br />Henti</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonials Section -->
+      <div class="text-center mb-12">
+        <h3 class="text-2xl font-bold text-gray-900 mb-4">
+          Apa Kata Pemimpin Pasukan Lain?
+        </h3>
+        <p class="text-gray-600 max-w-2xl mx-auto">
+          Dengar sendiri pengalaman mereka yang telah menggunakan Wajom untuk mengubah bisnes mereka.
+        </p>
+      </div>
+
+      <div class="grid gap-8 md:grid-cols-3">
+        <!-- Testimonial 1 -->
+        <div
+          class="testimonial-card group relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-8 shadow-lg">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-[#009E77]/5 to-transparent opacity-0 transition-opacity group-hover:opacity-100">
+          </div>
+
+          <div class="relative z-10">
+            <div class="mb-4 flex items-center gap-1">
+              <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+
+            <blockquote class="text-gray-700 mb-6 leading-relaxed">
+              "Sebelum Wajom, saya spend 4-5 jam sehari untuk follow-up prospek. Sekarang sistem buat semua, saya fokus
+              pada coaching team je. Income naik 300% dalam 6 bulan!"
+            </blockquote>
+
+            <div class="flex items-center gap-3">
+              <div
+                class="h-10 w-10 rounded-full bg-gradient-to-br from-[#009E77] to-[#52B963] flex items-center justify-center text-white font-semibold text-sm">
+                AS
+              </div>
+              <div>
+                <div class="font-semibold text-gray-900">Ahmad Syafiq</div>
+                <div class="text-sm text-gray-600">Team Leader, Kuala Lumpur</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div
+          class="testimonial-card group relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-8 shadow-lg">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-[#41B4E7]/5 to-transparent opacity-0 transition-opacity group-hover:opacity-100">
+          </div>
+
+          <div class="relative z-10">
+            <div class="mb-4 flex items-center gap-1">
+              <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+
+            <blockquote class="text-gray-700 mb-6 leading-relaxed">
+              "Game changer betul! Dulu team saya inconsistent dalam follow-up. Sekarang semua guna sistem yang sama,
+              conversion rate naik 250%. Highly recommended!"
+            </blockquote>
+
+            <div class="flex items-center gap-3">
+              <div
+                class="h-10 w-10 rounded-full bg-gradient-to-br from-[#41B4E7] to-[#5BC0EB] flex items-center justify-center text-white font-semibold text-sm">
+                SH
+              </div>
+              <div>
+                <div class="font-semibold text-gray-900">Siti Hajar</div>
+                <div class="text-sm text-gray-600">Network Leader, Johor Bahru</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div
+          class="testimonial-card group relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-8 shadow-lg">
+          <div
+            class="absolute inset-0 bg-gradient-to-br from-[#52B963]/5 to-transparent opacity-0 transition-opacity group-hover:opacity-100">
+          </div>
+
+          <div class="relative z-10">
+            <div class="mb-4 flex items-center gap-1">
+              <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+              <svg class="h-5 w-5 text-yellow-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            </div>
+
+            <blockquote class="text-gray-700 mb-6 leading-relaxed">
+              "ROI yang sangat menguntungkan. Investment untuk Wajom balik modal dalam 2 bulan je. Sekarang boleh fokus
+              pada strategy dan scaling instead of admin work."
+            </blockquote>
+
+            <div class="flex items-center gap-3">
+              <div
+                class="h-10 w-10 rounded-full bg-gradient-to-br from-[#52B963] to-[#009E77] flex items-center justify-center text-white font-semibold text-sm">
+                MR
+              </div>
+              <div>
+                <div class="font-semibold text-gray-900">Muhammad Rizal</div>
+                <div class="text-sm text-gray-600">Business Owner, Penang</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="relative overflow-hidden bg-white py-20 lg:py-28">
+    <div class="absolute inset-0 opacity-[0.02]" aria-hidden="true">
+      <div class="pointer-events-none absolute -left-40 top-1/4 h-80 w-80 rounded-full bg-[#009E77] blur-3xl"></div>
+      <div class="pointer-events-none absolute -right-40 bottom-1/4 h-80 w-80 rounded-full bg-[#41B4E7] blur-3xl"></div>
+    </div>
+
+    <div class="mx-auto max-w-4xl px-6">
+      <div class="text-center mb-16">
+        <span
+          class="inline-flex items-center gap-2 rounded-full border border-[#009E77]/20 bg-white/80 px-4 py-2 text-sm font-medium text-[#009E77] backdrop-blur">
+          <span class="h-2 w-2 rounded-full bg-[#009E77] animate-pulse"></span>
+          Soalan Lazim
+        </span>
+        <h2 class="mt-6 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+          Masih Ada Soalan?
+        </h2>
+        <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+          Kami faham anda mungkin ada keraguan. Berikut jawapan kepada soalan yang paling kerap ditanya.
+        </p>
+      </div>
+
+      <div class="space-y-4">
+        <!-- FAQ Item 1 -->
+        <div class="faq-item border border-gray-200 rounded-xl bg-white shadow-sm hover:shadow-md transition-all"
+          onclick="toggleFAQ(1)">
+          <button class="w-full px-6 py-6 text-left flex items-center justify-between focus:outline-none">
+            <h3 class="text-lg font-semibold text-gray-900 pr-4">
+              Berapa lama masa yang diperlukan untuk setup Wajom?
+            </h3>
+            <div class="faq-icon flex-shrink-0 w-6 h-6 text-[#009E77]">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 5v14m7-7H5" />
+              </svg>
+            </div>
+          </button>
+          <div class="faq-answer px-6 pb-0" id="faq-1">
+            <p class="text-gray-600 leading-relaxed">
+              Setup Wajom sangat mudah dan pantas! Dalam masa 15 minit sahaja, anda sudah boleh mula menggunakan sistem
+              automasi kami. Tim support kami akan membantu anda step-by-step untuk memastikan everything berjalan
+              dengan sempurna.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 2 -->
+        <div class="faq-item border border-gray-200 rounded-xl bg-white shadow-sm hover:shadow-md transition-all"
+          onclick="toggleFAQ(2)">
+          <button class="w-full px-6 py-6 text-left flex items-center justify-between focus:outline-none">
+            <h3 class="text-lg font-semibold text-gray-900 pr-4">
+              Adakah Wajom selamat untuk digunakan dengan WhatsApp Business?
+            </h3>
+            <div class="faq-icon flex-shrink-0 w-6 h-6 text-[#009E77]">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 5v14m7-7H5" />
+              </svg>
+            </div>
+          </button>
+          <div class="faq-answer px-6 pb-0" id="faq-2">
+            <p class="text-gray-600 leading-relaxed">
+              Ya, 100% selamat! Wajom dibangunkan mengikut guidelines WhatsApp dan tidak melanggar mana-mana terms of
+              service. Kami menggunakan WhatsApp Business API yang official dan telah digunakan oleh ribuan business
+              owner tanpa sebarang masalah.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 3 -->
+        <div class="faq-item border border-gray-200 rounded-xl bg-white shadow-sm hover:shadow-md transition-all"
+          onclick="toggleFAQ(3)">
+          <button class="w-full px-6 py-6 text-left flex items-center justify-between focus:outline-none">
+            <h3 class="text-lg font-semibold text-gray-900 pr-4">
+              Bolehkah saya customize message dan campaign mengikut bisnes saya?
+            </h3>
+            <div class="faq-icon flex-shrink-0 w-6 h-6 text-[#009E77]">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 5v14m7-7H5" />
+              </svg>
+            </div>
+          </button>
+          <div class="faq-answer px-6 pb-0" id="faq-3">
+            <p class="text-gray-600 leading-relaxed">
+              Tentu sekali! Wajom memberikan anda full control untuk customize semua message, campaign flow, dan
+              branding mengikut keperluan bisnes anda. Anda boleh set tone of voice, add company logo, dan create
+              campaign yang unique untuk industry anda.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 4 -->
+        <div class="faq-item border border-gray-200 rounded-xl bg-white shadow-sm hover:shadow-md transition-all"
+          onclick="toggleFAQ(4)">
+          <button class="w-full px-6 py-6 text-left flex items-center justify-between focus:outline-none">
+            <h3 class="text-lg font-semibold text-gray-900 pr-4">
+              Bagaimana jika saya tidak tech-savvy? Boleh ke guna Wajom?
+            </h3>
+            <div class="faq-icon flex-shrink-0 w-6 h-6 text-[#009E77]">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 5v14m7-7H5" />
+              </svg>
+            </div>
+          </button>
+          <div class="faq-answer px-6 pb-0" id="faq-4">
+            <p class="text-gray-600 leading-relaxed">
+              Wajom direka untuk sesiapa sahaja, termasuk yang tidak tech-savvy! Interface kami sangat user-friendly
+              dengan drag-and-drop features. Plus, kami ada comprehensive training dan 24/7 support untuk memastikan
+              anda berjaya menggunakan sistem ini.
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 5 -->
+        <div class="faq-item border border-gray-200 rounded-xl bg-white shadow-sm hover:shadow-md transition-all"
+          onclick="toggleFAQ(5)">
+          <button class="w-full px-6 py-6 text-left flex items-center justify-between focus:outline-none">
+            <h3 class="text-lg font-semibold text-gray-900 pr-4">
+              Adakah ada trial period atau money-back guarantee?
+            </h3>
+            <div class="faq-icon flex-shrink-0 w-6 h-6 text-[#009E77]">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 5v14m7-7H5" />
+              </svg>
+            </div>
+          </button>
+          <div class="faq-answer px-6 pb-0" id="faq-5">
+            <p class="text-gray-600 leading-relaxed">
+              Ya! Kami confident dengan quality Wajom, jadi kami offer 30-day money-back guarantee. Jika dalam 30 hari
+              anda tidak satisfied dengan results, kami akan refund 100% tanpa soalan. Risk-free untuk anda cuba!
+            </p>
+          </div>
+        </div>
+
+        <!-- FAQ Item 6 -->
+        <div class="faq-item border border-gray-200 rounded-xl bg-white shadow-sm hover:shadow-md transition-all"
+          onclick="toggleFAQ(6)">
+          <button class="w-full px-6 py-6 text-left flex items-center justify-between focus:outline-none">
+            <h3 class="text-lg font-semibold text-gray-900 pr-4">
+              Berapa banyak prospek yang boleh saya handle dengan Wajom?
+            </h3>
+            <div class="faq-icon flex-shrink-0 w-6 h-6 text-[#009E77]">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 5v14m7-7H5" />
+              </svg>
+            </div>
+          </button>
+          <div class="faq-answer px-6 pb-0" id="faq-6">
+            <p class="text-gray-600 leading-relaxed">
+              Wajom boleh handle unlimited prospek! Sistem kami direka untuk scale dengan bisnes anda. Dari 100 prospek
+              hingga 100,000 prospek, Wajom akan manage semua dengan efficiency yang sama. No limits, no restrictions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section id="final-cta"
+    class="relative overflow-hidden bg-gradient-to-br from-[#009E77] via-[#009E77] to-[#52B963] py-20 lg:py-28">
+    <!-- Background Elements -->
+    <div class="absolute inset-0" aria-hidden="true">
+      <div class="pointer-events-none absolute -left-40 top-1/4 h-96 w-96 rounded-full bg-white/10 blur-3xl"></div>
+      <div class="pointer-events-none absolute -right-40 bottom-1/4 h-96 w-96 rounded-full bg-white/10 blur-3xl"></div>
+
+      <!-- Floating Elements -->
+      <div class="floating-element pointer-events-none absolute left-1/4 top-1/3 h-4 w-4 rounded-full bg-white/20">
+      </div>
+      <div class="floating-element pointer-events-none absolute right-1/4 top-2/3 h-6 w-6 rounded-full bg-white/15"
+        style="animation-delay: -2s;"></div>
+      <div class="floating-element pointer-events-none absolute left-3/4 top-1/4 h-3 w-3 rounded-full bg-white/25"
+        style="animation-delay: -4s;"></div>
+    </div>
+
+    <div class="relative mx-auto max-w-4xl px-6 text-center">
+      <!-- Urgency Badge -->
+      <div class="mb-8">
+        <span
+          class="inline-flex items-center gap-2 rounded-full border border-white/30 bg-white/20 px-6 py-3 text-sm font-medium text-white backdrop-blur">
+          <svg class="h-4 w-4 animate-pulse" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+          </svg>
+          Tawaran Terhad - Hanya untuk 100 Orang Pertama
+        </span>
+      </div>
+
+      <!-- Main Headline -->
+      <h2 class="text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl mb-6">
+        Jangan Biar Peluang Ini
+        <span class="block bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent">
+          Terlepas Lagi!
+        </span>
+      </h2>
+
+      <p class="text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+        Ribuan pemimpin pasukan sudah menggunakan Wajom untuk 3X kan income mereka.
+        <strong class="text-yellow-300">Sekarang giliran anda!</strong>
+      </p>
+
+      <!-- Benefits List -->
+      <div class="grid gap-4 md:grid-cols-3 mb-12 text-left">
+        <div class="flex items-center gap-3 bg-white/10 rounded-lg p-4 backdrop-blur">
+          <div class="flex-shrink-0 w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
+            <svg class="w-5 h-5 text-gray-900" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <span class="text-white font-medium">Setup dalam 15 minit</span>
+        </div>
+        <div class="flex items-center gap-3 bg-white/10 rounded-lg p-4 backdrop-blur">
+          <div class="flex-shrink-0 w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
+            <svg class="w-5 h-5 text-gray-900" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <span class="text-white font-medium">30-day money back</span>
+        </div>
+        <div class="flex items-center gap-3 bg-white/10 rounded-lg p-4 backdrop-blur">
+          <div class="flex-shrink-0 w-8 h-8 bg-yellow-400 rounded-full flex items-center justify-center">
+            <svg class="w-5 h-5 text-gray-900" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <span class="text-white font-medium">24/7 support team</span>
+        </div>
+      </div>
+
+      <!-- Main CTA Button -->
+      <div class="mb-8">
+        <button
+          class="cta-button group relative inline-flex items-center gap-3 rounded-full bg-white px-12 py-6 text-xl font-bold text-[#009E77] shadow-2xl transition-all hover:bg-yellow-50 hover:scale-105 focus:outline-none focus:ring-4 focus:ring-white/50">
+          <span>Ya, Saya Nak Mula Sekarang!</span>
+          <svg class="h-6 w-6 transition-transform group-hover:translate-x-1" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M5 12h14m-7-7l7 7-7 7" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Secondary Info -->
+      <div class="text-center">
+        <p class="text-white/80 text-sm mb-4">
+          ✨ <strong>BONUS:</strong> Free 1-on-1 setup session (Nilai RM500) untuk 50 orang pertama!
+        </p>
+        <div class="flex items-center justify-center gap-6 text-white/70 text-sm">
+          <div class="flex items-center gap-2">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 1l3.09 6.26L22 8.27l-5 4.87 1.18 6.88L12 16.77l-6.18 3.25L7 13.14 2 8.27l6.91-1.01L12 1z" />
+            </svg>
+            <span>500+ Happy Customers</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>Secure & Safe</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
+            <span>No Setup Fee</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Global variables
+    let openFAQ = null;
+
+    // FAQ functionality
+    function toggleFAQ(index) {
+      const faqItem = document.querySelector(`#faq-${index}`).parentElement;
+      const faqAnswer = document.querySelector(`#faq-${index}`);
+      const faqIcon = faqItem.querySelector('.faq-icon');
+
+      if (openFAQ === index) {
+        // Close current FAQ
+        faqItem.classList.remove('active');
+        faqAnswer.style.maxHeight = '0';
+        faqAnswer.style.opacity = '0';
+        faqAnswer.style.paddingTop = '0';
+        faqIcon.style.transform = 'rotate(0deg)';
+        openFAQ = null;
+      } else {
+        // Close previously open FAQ
+        if (openFAQ !== null) {
+          const prevFaqItem = document.querySelector(`#faq-${openFAQ}`).parentElement;
+          const prevFaqAnswer = document.querySelector(`#faq-${openFAQ}`);
+          const prevFaqIcon = prevFaqItem.querySelector('.faq-icon');
+
+          prevFaqItem.classList.remove('active');
+          prevFaqAnswer.style.maxHeight = '0';
+          prevFaqAnswer.style.opacity = '0';
+          prevFaqAnswer.style.paddingTop = '0';
+          prevFaqIcon.style.transform = 'rotate(0deg)';
+        }
+
+        // Open new FAQ
+        faqItem.classList.add('active');
+        faqAnswer.style.maxHeight = '500px';
+        faqAnswer.style.opacity = '1';
+        faqAnswer.style.paddingTop = '1rem';
+        faqIcon.style.transform = 'rotate(45deg)';
+        openFAQ = index;
+      }
+    }
+
+    // Smooth scrolling for anchor links
+    document.addEventListener('DOMContentLoaded', function () {
+      const links = document.querySelectorAll('a[href^="#"]');
+
+      links.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute('href');
+          const targetSection = document.querySelector(targetId);
+
+          if (targetSection) {
+            targetSection.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });
+    });
+  </script>
 </body>
+
 </html>
