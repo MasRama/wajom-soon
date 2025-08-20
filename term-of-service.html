@@ -127,77 +127,44 @@
         <div class="flex items-center">
           <a href="#" class="flex items-center gap-3 group transition-transform duration-300 hover:scale-105">
             <img src="/logo.png"
-              class="w-8 h-8 lg:w-12 lg:h-12 bg-gradient-to-br from-wajom-primary to-wajom-tertiary rounded-xl flex items-center justify-center shadow-lg shadow-wajom-primary/25">
+              class="w-8 h-8 lg:w-12 lg:h-12 bg-gradient-to-br from-wajom-primary to-wajom-tertiary flex items-center justify-center shadow-lg shadow-wajom-primary/25">
             </i>
-            <div class="flex flex-col">
-              <span class="text-xl lg:text-2xl font-bold text-wajom-primary tracking-tight">
-                Wajom
-              </span>
-              <span class="text-xs text-gray-600 font-medium">
-                RAED LAB SDN.BHD.<br>202501036581 (1637991-U)
-              </span>
+            <div class="flex items-center gap-4">
+              <div class="flex flex-col">
+                <span class="text-xl lg:text-2xl font-bold text-wajom-primary tracking-tight">
+                  Wajom
+                </span>
+              </div>
+              <div class="hidden sm:block border-l border-gray-300 pl-4">
+                <div class="flex flex-col">
+                  <span class="text-[10px] text-gray-600 font-medium">RAED LAB SDN.BHD.</span>
+                  <span class="text-[10px] text-gray-600 font-medium">202501036581 (1637991-U)</span>
+                </div>
+              </div>
             </div>
           </a>
         </div>
 
-        <!-- Desktop Navigation -->
-        <nav class="hidden lg:flex items-center space-x-1">
-          <a href="/"
-            class="px-4 py-2 text-gray-700 text-sm hover:text-wajom-primary font-medium rounded-lg transition-all duration-200 hover:bg-wajom-primary/5 relative group">
-            Home
-            <span
-              class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-wajom-primary transition-all duration-200 group-hover:w-8 group-hover:left-1/2 group-hover:-translate-x-1/2"></span>
-          </a>
-          <a href="/about.html"
-            class="px-4 py-2 text-gray-700 text-sm hover:text-wajom-primary font-medium rounded-lg transition-all duration-200 hover:bg-wajom-primary/5 relative group">
-            About
-            <span
-              class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-wajom-primary transition-all duration-200 group-hover:w-8 group-hover:left-1/2 group-hover:-translate-x-1/2"></span>
-          </a>
-          <a href="/privacy-policy.html"
-            class="px-4 py-2 text-gray-700 text-sm hover:text-wajom-primary font-medium rounded-lg transition-all duration-200 hover:bg-wajom-primary/5 relative group">
-            Privacy Policy
-            <span
-              class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-wajom-primary transition-all duration-200 group-hover:w-8 group-hover:left-1/2 group-hover:-translate-x-1/2"></span>
-          </a>
-          <a href="/term-of-service.html"
-            class="px-4 py-2 text-green-600 text-sm hover:text-wajom-primary font-medium rounded-lg transition-all duration-200 hover:bg-wajom-primary/5 relative group">
-            Terms of Service
-            <span
-              class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-wajom-primary transition-all duration-200 group-hover:w-8 group-hover:left-1/2 group-hover:-translate-x-1/2"></span>
-          </a>
-          <a href="/detail-of-service.html"
-            class="px-4 py-2 text-gray-700 text-sm hover:text-wajom-primary font-medium rounded-lg transition-all duration-200 hover:bg-wajom-primary/5 relative group">
-            Service Details
-            <span
-              class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-wajom-primary transition-all duration-200 group-hover:w-8 group-hover:left-1/2 group-hover:-translate-x-1/2"></span>
-          </a>
-          <a href="/cancelation-policy.html"
-            class="px-4 py-2 text-gray-700 text-sm hover:text-wajom-primary font-medium rounded-lg transition-all duration-200 hover:bg-wajom-primary/5 relative group">
-            Cancellation Policy
-            <span
-              class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-wajom-primary transition-all duration-200 group-hover:w-8 group-hover:left-1/2 group-hover:-translate-x-1/2"></span>
-          </a>
-        </nav>
-
-
         <!-- Login Button & Mobile Menu -->
         <div class="flex items-center gap-4">
           <!-- Login Button -->
-          <a href="https://portal.wajom.co/login"
-            class="inline-flex items-center gap-2 bg-teal-600 hover:bg-teal-700 text-white font-semibold px-6 py-2.5 rounded-xl transition-all duration-200 shadow-lg shadow-teal-600/25 hover:shadow-xl hover:shadow-teal-600/30 hover:-translate-y-0.5">
+          <a href="#"
+            class="hidden lg:inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-wajom-primary to-wajom-tertiary text-white text-sm font-medium rounded-lg hover:shadow-lg hover:shadow-wajom-primary/25 transition-all duration-200 hover:scale-105">
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1" />
+                d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"></path>
             </svg>
             Login
           </a>
 
           <!-- Mobile Menu Button -->
-          <button id="mobile-menu-button"
-            class="lg:hidden p-2 text-gray-700 hover:text-teal-600 transition-colors duration-200">
+          <button id="mobile-menu-btn"
+            class="lg:hidden p-2 text-gray-600 hover:text-wajom-primary hover:bg-wajom-primary/5 rounded-lg transition-all duration-200">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
             </svg>
           </button>
         </div>
@@ -850,19 +817,39 @@
   </script>
 
   <!-- Footer -->
-  <footer class="bg-gray-900 text-white py-8">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center">
-        <div class="mb-4">
-          <span class="text-lg font-bold text-wajom-primary">Wajom</span>
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Company Info -->
+        <div>
+          <h3 class="text-2xl font-bold mb-4">Wajom</h3>
+          <p class="text-gray-400 mb-4">RAED LAB SDN.BHD. (202501036581)</p>
+          <p class="text-gray-400">Solusi WhatsApp Marketing yang Mudah dan Efektif</p>
         </div>
-        <div class="text-sm text-gray-400">
-          <p class="mb-2">RAED LAB SDN.BHD.</p>
-          <p>202501036581 (1637991-U)</p>
+        
+        <!-- Quick Links -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Navigasi</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+            <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About</a></li>
+            <li><a href="detail-of-service.html" class="text-gray-400 hover:text-white transition-colors">Service Details</a></li>
+          </ul>
         </div>
-        <div class="mt-6 pt-6 border-t border-gray-800 text-xs text-gray-500">
-          <p>&copy; 2024 Wajom. All rights reserved.</p>
+        
+        <!-- Legal Links -->
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Legal</h4>
+          <ul class="space-y-2">
+            <li><a href="privacy-policy.html" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+            <li><a href="term-of-service.html" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+            <li><a href="cancelation-policy.html" class="text-gray-400 hover:text-white transition-colors">Cancellation Policy</a></li>
+          </ul>
         </div>
+      </div>
+      
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+        <p class="text-gray-400">&copy; 2025 Wajom. All rights reserved.</p>
       </div>
     </div>
   </footer>
