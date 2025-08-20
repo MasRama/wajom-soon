@@ -27,8 +27,7 @@
       opacity: 0.25;
     }
 
-    #hero @keyframes float {
-
+    @keyframes float {
       0%,
       100% {
         transform: translateY(0) translateX(0) scale(1);
@@ -39,8 +38,7 @@
       }
     }
 
-    #hero @keyframes pulse-glow {
-
+    @keyframes pulse-glow {
       0%,
       100% {
         box-shadow: 0 0 0 0 rgba(65, 180, 231, 0.35);
@@ -65,8 +63,7 @@
     }
 
     /* Problem Section Styles */
-    #problem @keyframes float {
-
+    @keyframes problem-float {
       0%,
       100% {
         transform: translateY(0);
@@ -78,8 +75,7 @@
     }
 
     /* Solution Section Styles */
-    #solution @keyframes float {
-
+    @keyframes solution-float {
       0%,
       100% {
         transform: translateY(0) translateX(0) scale(1);
@@ -96,7 +92,7 @@
       animation: shine 3s infinite;
     }
 
-    #solution @keyframes shine {
+    @keyframes shine {
       0% {
         background-position: -200% -200%;
       }
@@ -111,8 +107,7 @@
     }
 
     /* How It Works Section Styles */
-    #how-it-works @keyframes float {
-
+    @keyframes how-it-works-float {
       0%,
       100% {
         transform: translateY(0) translateX(0) scale(1);
@@ -137,8 +132,7 @@
     }
 
     /* Target Audience Section Styles */
-    #target-audience @keyframes float {
-
+    @keyframes target-audience-float {
       0%,
       100% {
         transform: translateY(0) translateX(0) scale(1);
@@ -193,8 +187,7 @@
     }
 
     /* Final CTA Section Styles */
-    #final-cta @keyframes pulse-glow {
-
+    @keyframes final-cta-pulse-glow {
       0%,
       100% {
         box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4);
@@ -206,15 +199,14 @@
     }
 
     #final-cta .cta-button {
-      animation: pulse-glow 2s infinite;
+      animation: final-cta-pulse-glow 2s infinite;
     }
 
     #final-cta .floating-element {
-      animation: float 6s ease-in-out infinite;
+      animation: final-cta-float 6s ease-in-out infinite;
     }
 
-    #final-cta @keyframes float {
-
+    @keyframes final-cta-float {
       0%,
       100% {
         transform: translateY(0) rotate(0deg);
@@ -268,9 +260,14 @@
             <img src="/logo.png"
               class="w-8 h-8 lg:w-12 lg:h-12 bg-gradient-to-br from-wajom-primary to-wajom-tertiary rounded-xl flex items-center justify-center shadow-lg shadow-wajom-primary/25">
             </i>
-            <span class="text-xl lg:text-2xl font-bold text-wajom-primary tracking-tight">
-              Wajom
-            </span>
+            <div class="flex flex-col">
+              <span class="text-xl lg:text-2xl font-bold text-wajom-primary tracking-tight">
+                Wajom
+              </span>
+              <span class="text-xs text-gray-600 font-medium">
+                RAED LAB SDN.BHD.<br>202501036581 (1637991-U)
+              </span>
+            </div>
           </a>
         </div>
 
@@ -1528,6 +1525,24 @@
       </div>
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-white py-8">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center">
+        <div class="mb-4">
+          <span class="text-lg font-bold text-wajom-primary">Wajom</span>
+        </div>
+        <div class="text-sm text-gray-400">
+          <p class="mb-2">RAED LAB SDN.BHD.</p>
+          <p>202501036581 (1637991-U)</p>
+        </div>
+        <div class="mt-6 pt-6 border-t border-gray-800 text-xs text-gray-500">
+          <p>&copy; 2024 Wajom. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script>
     // Global variables
